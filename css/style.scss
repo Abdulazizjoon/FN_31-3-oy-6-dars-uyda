@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  .container{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  table {
+    border: none;
+  }
+  td {
+    font-size: 14px;
+  }
+  th{
+    font-size: 18px;
+    i{
+      margin-right: 10px;
+      font-size: 16px;
+    }
+  }
+  table,
+  th,
+  td {
+    padding:10px 20px;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    background-color: #f7f7f7;
+  }
+  th {
+    font-weight: 500;
+  }
+  .tags {
+    display: flex;
+    column-gap: 5px;
+  }
+  .tags > span {
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .pink {
+    background-color: #ffcff4;
+  }
+  .green {
+    background-color: #90fcb4;
+  }
+  .yellow {
+    background-color: #fff4ab;
+  }
+  .rating{
+    background-color: #fff0bb;
+    width:110px;
+    height: 30px;
+    border-radius: 20px;
+    i{
+      color: #ffac33;
+      margin-top:7px;
+      margin-left:7px;
+    }
+  }
+  .raating{
+    background-color: #fff0bb;
+    width:90px;
+    height: 30px;
+    border-radius: 20px;
+    i{
+      color: #ffac33;
+      margin-top:7px;
+      margin-left:7px;
+    }
+  }
+  .rting{
+    background-color: #fff0bb;
+    width:140px;
+    height: 30px;
+    border-radius: 20px;
+    i{
+      color: #ffac33;
+      margin-top:7px;
+      margin-left:7px;
+    }
+  }
+  body.dark th, body.dark td {
+    background-color: #444;
+    border-color: #555;
+  }
+  body.dark .rating {
+    background-color: #555;
+  }
+  body.dark .rating i {
+    color: #ffac33;
+  }
+  body.light {
+    background-color: #f7f7f7;
+    color: #000;
+  }
+  body.dark {
+    background-color: #333;
+    color: #fff;
+  }
+  .wraper{
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+.chek{
+    cursor: pointer;
+    appearance: none;
+    width: 80px;
+    height: 40px;
+    background-color: gray;
+    border-radius: 20px;
+    position: relative;
+    transition: all 0.5s;
+}
+.chek:checked{
+    background-color: blue;
+}
+.chek::before{
+    content: '';
+    width: 36px;
+    height: 36px;
+    background-color: #fff;
+    position: absolute;
+    border-radius: 50%;
+    top: 2px;
+    left: 2px;
+    transition: all 0.5s;
+}
+.chek:checked::before{
+    left: 41px;
+}
